@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+    <!--  First few rows show the name of the series and column headings -->
+	<TextView
+    	android:id="@+id/series_name"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:textSize="20sp"
+    	android:textStyle="bold"
+    	android:paddingBottom="20dp"/>
+    <TextView
+    	android:id="@+id/pos"
+	    android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+        android:textSize="12sp"
+    	android:text="@string/position"
+    	android:layout_below="@id/series_name"
+    	android:paddingBottom="20dp"
+    	android:paddingRight="10dip"/>
+    <TextView
+    	android:id="@+id/entry"
+	   	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+       	android:textSize="12sp"
+        android:text="@string/entry"
+    	android:layout_below="@id/series_name"
+    	android:layout_toRightOf="@id/pos"
+    	android:paddingBottom="20dp"/> 
+    <TextView 
+        android:id="@+id/net_pts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       	android:textSize="12sp"
+        android:text="@string/net_pts"
+    	android:layout_below="@id/series_name"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:paddingRight="20dip"
+    	android:paddingBottom="20dp"/> 
+    <TextView 
+        android:id="@+id/gross_pts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       	android:textSize="12sp"
+        android:text="@string/gross_pts"
+    	android:layout_below="@id/series_name"
+        android:layout_toLeftOf="@id/net_pts"
+        android:gravity="right"
+        android:paddingRight="50dip"
+    	android:paddingBottom="20dp"/> 
+    
+    <!-- The main part of the list view to be filled by the program -->	
+    <ListView  
+		android:id="@+id/android:list"
+		android:layout_below="@id/pos"
+    	android:layout_width="fill_parent" 
+    	android:layout_height="fill_parent"/>
+    <!-- Default to show if there is no data -->
+    <TextView
+    	android:id="@+id/android:empty"
+    	android:layout_below="@id/pos"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:text="@string/no_entries" />
+    
+</RelativeLayout>

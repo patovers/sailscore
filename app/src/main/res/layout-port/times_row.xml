@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/race_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dip"
+        android:text="@string/race_line"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/race_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/race_line"
+        android:paddingRight="10dip"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/mins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/start_mins"
+        android:paddingRight="30dip"
+        android:text="@string/mins"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/secs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingRight="30dip"
+        android:text="@string/secs"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/start_mins"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mins"
+        android:layout_toLeftOf="@+id/start_secs"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="right"
+        android:imeActionLabel="Done"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:textColor="#000000" 
+        android:textSize="16sp"
+        android:selectAllOnFocus="true" />
+
+    <EditText
+        android:id="@+id/finish_mins"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/start_mins"
+        android:layout_alignRight="@+id/start_mins"
+        android:layout_below="@id/start_mins"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="right"
+        android:imeActionLabel="Done"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:textColor="#000000" 
+        android:textSize="16sp"
+        android:selectAllOnFocus="true" />
+
+    <Spinner
+        android:id="@+id/result_code_spinner"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/finish_mins"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/finish_mins"
+        android:focusable="true"
+        android:focusableInTouchMode="false"
+        android:gravity="right"
+        android:paddingRight="-10px"
+        android:textSize="14sp"
+        android:prompt="@string/result_prompt" />
+
+    <EditText
+        android:id="@+id/finish_secs"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/result_code_spinner"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:imeActionLabel="Done"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:selectAllOnFocus="true" />
+
+    <EditText
+        android:id="@+id/start_secs"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/secs"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:imeActionLabel="Done"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:selectAllOnFocus="true" />
+
+    <EditText
+        android:id="@+id/total_laps"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/secs"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/result_code_spinner"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:imeActionLabel="Done"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:selectAllOnFocus="true" />
+
+    <TextView
+        android:id="@+id/tot_laps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/total_laps"
+        android:layout_alignBottom="@+id/total_laps"
+        android:layout_toLeftOf="@+id/total_laps"
+        android:gravity="right"
+        android:paddingRight="10dip"
+        android:text="@string/of_laps"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/laps_sailed"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/result_code_spinner"
+        android:layout_toLeftOf="@+id/tot_laps"
+        android:layout_toRightOf="@+id/finish_time"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="right"
+        android:imeActionLabel="Done"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:selectAllOnFocus="true" />
+
+    <TextView
+        android:id="@+id/laps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/laps_sailed"
+        android:layout_alignBottom="@+id/laps_sailed"
+        android:layout_toLeftOf="@+id/laps_sailed"
+        android:gravity="right"
+        android:paddingRight="10dip"
+        android:text="@string/laps"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/start_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/start_mins"
+        android:layout_alignBottom="@+id/start_mins"
+        android:layout_toLeftOf="@+id/start_mins"
+        android:gravity="right"
+        android:paddingRight="10dip"
+        android:text="@string/start_time"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/finish_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/finish_mins"
+        android:layout_alignBottom="@+id/finish_mins"
+        android:layout_alignRight="@+id/start_time"
+        android:gravity="right"
+        android:paddingRight="10dip"
+        android:text="@string/finish_time"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/rdg_pos"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/total_laps"
+        android:layout_toRightOf="@+id/tot_laps"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:imeActionLabel="Done"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:selectAllOnFocus="true" />
+
+    <TextView
+        android:id="@+id/rdg_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rdg_pos"
+        android:layout_alignBottom="@+id/rdg_pos"
+        android:layout_toLeftOf="@+id/rdg_pos"
+        android:gravity="right"
+        android:paddingRight="10dip"
+        android:text="@string/rdg_pos"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+    
+</RelativeLayout>
+ 

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Strings for top level application and home screen -->
+    <string name="hello">Sail scoring system</string>
+    <string name="app_name">SailScore</string>
+    <string name="view_entries">View/Edit Existing Competitors</string>
+    <string name="new_entry">Enter New Competitor Details</string>
+    <string name="view_series">View/Edit Existing Race Series</string>
+    <string name="new_series">Create New Race Series</string>
+    <string name="import_export">Import/Export</string>
+    <string name="instructions">Instructions/Help</string>
+
+    <!-- Strings for competitor entry activity -->
+    <string name="competitor_edit_title">Edit competitor details</string>
+    <string name="helm_line">Helm</string>
+    <string name="crew_line">Crew</string>
+    <string name="class_line">Class</string>
+    <string name="py_line">PY</string>
+    <string name="sailno_line">Sail no.</string>
+    <string name="club_line">Club</string>
+    <string name="entry_saved_message">Entry saved</string>
+
+    <!-- Strings for competitor list activity -->
+    <string name="competitor_list_title">Displaying all competitors</string>
+    <string name="no_entries">No competitors exist yet</string>
+    <string name="series_menu_insert">Create series</string>
+    <string name="menu_delete">Delete</string>
+    <string name="menu_edit_series_info">Edit series settings</string>
+    <string name="entry_menu_insert">Create competitor</string>
+    <string name="confirm_button_text">Save series</string>
+    <string name="confirm_and_quit_button_text">Save and quit</string>
+    <string name="confirm_and_next_button_text">Save and next</string>
+
+    <!-- Strings for series creation/edit activity -->
+    <string name="series_list_title">Displaying all race series</string>
+    <string name="competitor_select_title">Select competitors</string>
+    <string name="no_series">No series exist yet</string>
+    <string name="series_edit_title">Edit series</string>
+    <string name="series_name_line">Series name</string>
+    <string name="num_races_line">Number of races</string>
+    <string name="discard_profile_line">Discard profile</string>
+    <string name="fleet_hcap_line">Fleet or Handicap scoring</string>
+    <string name="fleet">Fleet</string>
+    <string name="hcap">Handicap</string>
+    <string name="select_competitors_button_text">Select competitors</string>
+    <string name="series_saved_message">Series saved</string>
+    <string name="bad_discard_profile">Bad discard profile</string>
+    <string name="badly_formed_discard_profile">Discard profile is badly formed. Please enter a series of incrementing values separated by * characters.</string>
+    <string name="invalid_num_races">Too many or too few races</string>
+    <string name="set_number_of_races">Set a number between 1 and 100</string>
+    <string name="discard_accept">OK</string>
+    
+    <!-- Strings for entries select activity -->
+	<string name="select_enough_competitors">Please select at least one</string>
+	<string name="invalid_competitor_selection">At least one competitor mus</string>
+	<string name="selection_accept">OK</string>
+	
+    <!-- Strings for series list activity -->
+    <string name="series_competitor_list_title">Displaying competitors in series</string>
+
+    <!-- Strings for entries select list activity -->
+    <string name="confirm_entries_button">Confirm selections</string>
+    <string name="confirm_delete_series">Delete series?</string>
+    <string name="confirm_delete_message">Press OK to delete this series</string>
+    <string name="ok_delete_series">OK</string>
+    <string name="cancel_delete_series">Cancel</string>
+
+    <!-- Strings for series entries list activity menu -->
+    <string name="series_score">Score series</string>
+    <string name="series_edit">Edit series info</string>
+    <string name="series_delete">Delete series</string>
+    <string name="series_export_raw">Export raw data</string>
+    <string name="series_export_scored">Export scored series</string>
+    
+    <!-- Strings for SeriesRacesListActivity -->
+    <string name="race_list_title">Displaying races in series</string>
+    <string name="race">Race</string>
+    <string name="no_races">No races in series yet</string>
+
+    <!-- Strings for result entry list activity -->
+    <string name="results_list_title">Enter results for competitor</string>
+    <string name="confirm_results_button">Save results</string>
+    <string name="no_results">No results yet</string>
+    <string name="result_prompt">Choose result code</string>
+    <string name="race_line">Race:</string>
+    <string name="enter_pos">Finish position</string>
+    <string name="enter_code">or result code</string>
+    <string name="competitor_line">Race:</string>
+
+    <!-- Strings for RaceResultsEntryListActivity -->
+    <string name="race_results_list_title">Enter results for race</string>
+    <string name="no_competitors">No competitors selected yet</string>
+
+    <!-- Strings for times entry list activity -->
+    <string name="times_list_title">Enter times for competitor</string>
+    <string name="mins">Minutes</string>
+    <string name="secs">Seconds</string>
+    <string name="start_time">Start</string>
+    <string name="finish_time">Finish</string>
+    <string name="laps">Pro rata</string>
+    <string name="of_laps">laps of</string>
+    <string name="set_number_of_seconds">Invalid value for seconds</string>
+    <string name="invalid_num_seconds">Enter 59 or less</string>
+    <string name="rdg_pos">Position if giving redress</string>
+
+    <!-- Strings for RaceTimesEntryListActivity -->
+    <string name="race_times_list_title">Enter times for race</string>
+
+    <!-- Strings for series results list activity -->
+
+
+    <!-- Strings for series score listactivity -->
+    <string name="scores_list_title">Displaying scores for series</string>
+    <string name="position">Pos</string>
+    <string name="entry">Entry</string>
+    <string name="gross_pts">Total</string>
+    <string name="net_pts">Net</string>
+    <string name="progress">Calculating results...</string>
+    <string name="export_image">Export results as image</string>
+    <string name="export_pdf">Export results as pdf</string>
+
+    <!-- Strings for results export activity -->
+    <string name="export_title">Exporting scored series</string>
+    <string name="series_line">Export series</string>
+    <string name="export_csv">Export as CSV file</string>
+    <string name="save_csv">Save as CSV file</string>
+    <string name="open_web">Open as web page</string>
+    <string name="file_saved_message">File saved</string>
+
+    <!-- Strings for SeriesTabActivity -->
+    <string name="series_tab_title">Enter results for series</string>
+    <string name="enter_by_competitor">Enter by competitor</string>
+    <string name="enter_by_race">Enter by race</string>
+    <string name="email_subject">Series data</string>
+    <string name="email_body">Hello,\n\nHere are your results.\n\nSent from Sailscore www.overs.org.uk</string>
+
+    <!-- General strings -->
+    <string-array name="result_codes">
+        <item>Valid finish</item>
+        <item>DNC Did not compete</item>
+        <item>DNS Did not start</item>
+        <item>DNF Did not finish</item>
+        <item>DNE Disq. not excludable</item>
+        <item>OCS On course side at start</item>
+        <item>BFD Black flagged</item>
+        <item>RET Retired</item>
+        <item>DGM Disq. gross misconduct (NE)</item>
+        <item>DSQ Disqualified</item>
+        <item>Duty</item>
+        <item>RDG Redress given</item>
+        <item>RDGa Redress, avg. all races</item>
+        <item>RDGb Redress, avg. previous races</item>
+        <item>SCP 20% Scoring penalty</item>
+        <item>ZFP 20% Z flag penalty</item>
+    </string-array>
+
+    <!--  Strings for the instructions screen -->
+    <string name="instructions_title">Sailscore Instructions</string>
+    <string name="action_settings">Settings</string>
+    <string name="instructions_text">Instructions for using Sailscore\n
+Sailscore is a simple app for running a sailing race series.\n\n
+Navigation through the app is via lists of competitors, race series and results.
+Use the device\'s \"Back\" button to navigate back through the screens.\n\n
+Start by entering your competitors - touch \"Enter New Competitor 
+Details\" on the home screen or \"View/Edit Existing Competitors\" then Menu > 
+Create New Competitor.\n
+Touch \"Save and next\" until they are all entered and then
+ \"Save and quit for the last one.\n
+If you miss any you can come back and enter them later.\n\n
+Create a race series - touch \"Create New Race Series\" (or 
+\"View/Edit Existing Race Series\" and then 
+Menu > Create Series).\n
+Enter the basics for the series. For discard profile enter 
+e.g. 0#0#1 for  a series of 3 races where one discard is 
+allowed after 3 races sailed or 0#0#1#1#2 if 2 discards are allowed 
+after 5 races sailed. Any non-numeric value will work as a delimeter.
+You must enter the details before adding competitors to the series.\n
+Touch \"Select Competitors\" and check those you want in the series. 
+Touch \"Confirm Selections\" and \"Save Series\" when done.\n\n
+When displaying all series, touch one to use it.\n
+A tabbed view appears; touch the tab for the way you want to enter 
+your results.\n
+A list of competitors or a list of races will be shown.\n
+Enter results by typing finishing positions, times, or 
+pulling down the list to select a result code. Touch Save Results 
+when done.\n\n
+When you\'ve entered all the results touch Menu > Score Series to 
+display the overall positions, points and individual race results.\n
+The menu button also give access to changing series information, such as 
+adding/deleting races or adding/removing competitors.\n
+Menu > Export Series will create a .csv file and show a dialogue 
+to choose what to do with it.\n
+The file can be imported into SailWave or other applications such as Excel.
+If export is done before scoring then the raw data is exported, 
+otherwise fully scored data with rankings is exported.\n\n
+Notes:\n\n
+If a competitor is deleted from the global list it is also removed 
+from any series in which it is used - Take Care when doing this!\n
+If a competitor is removed from a series it remains in the database
+for use in other series. Other series in which it already appears 
+are not affected. \n\n
+If you need to add a fresh competitor to an existing series you
+need to return to the home screen and add the competitor in the
+usual way then return to the series to add them using the
+\"Select Competitors\" button. You will then be able to add 
+their results.\n\n
+If you change the number of races in a series, new ones are added to the 
+end and removed ones are deleted from the last race and work backwards. Results
+that have been entered for races that are then deleted are lost. 
+You can add a race back on but results for it will need re-entering.\n\n
+Checking entered finish places is only done when scoring.
+e.g. If you enter a 1st, 2nd and 4th place with no 3rd, the 4th place finisher
+will receive 3 points when scored but will still show 4th as a finish position.\n
+The app will correctly allocate points for tied places, count backs and the various redress
+and scoring penalty situations.\n\n\n
+        </string>
+
+</resources>

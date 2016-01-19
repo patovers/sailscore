@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:orientation="vertical">
+     <TextView android:id="@+id/boatclass"
+         android:textSize="16sp"
+         android:textStyle="bold"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+    	 android:textColor="#000000"
+         android:paddingRight="10dip"/>
+     <TextView android:id="@+id/sailno"
+         android:textSize="16sp"
+         android:textStyle="bold"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_toRightOf="@id/boatclass"
+    	 android:textColor="#000000"
+         android:layout_gravity="right"/>
+     <TextView android:id="@+id/helm"
+         android:textSize="12sp"
+         android:textStyle=""
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/boatclass"
+    	 android:textColor="#000000"
+         android:paddingRight="10dip"/>
+     <TextView android:id="@+id/crew"
+         android:textSize="12sp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_toRightOf="@id/helm"
+    	 android:textColor="#000000"
+         android:layout_below="@id/boatclass"/>
+     <TextView android:id="@+id/club"
+         android:textSize="12sp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+    	 android:textColor="#000000"
+         android:layout_below="@id/helm"/>
+ </RelativeLayout>
+ 

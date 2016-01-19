@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+    	android:title="@string/series_score"
+    	android:icon="@android:drawable/ic_menu_manage"
+    	android:id="@+id/menu_score">
+    </item>
+    <item
+    	android:title="@string/series_edit"
+    	android:icon="@android:drawable/ic_menu_edit"
+    	android:id="@+id/menu_settings">
+    </item>
+    <item
+    	android:title="@string/series_delete"
+    	android:icon="@android:drawable/ic_menu_delete"
+    	android:id="@+id/menu_delete">
+    </item>
+    <item
+    	android:title="@string/series_export_raw"
+    	android:icon="@android:drawable/ic_menu_share"
+    	android:id="@+id/menu_export_raw">
+    </item>
+    <item
+    	android:title="@string/series_export_scored"
+    	android:icon="@android:drawable/ic_menu_share"
+    	android:id="@+id/menu_export_scored">
+    </item>
+</menu>

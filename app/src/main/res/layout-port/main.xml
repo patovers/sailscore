@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:orientation="vertical" 
+    android:weightSum="1" 
+    android:background="@drawable/background_portrait" 
+    android:gravity="fill_horizontal">
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="0dip" 
+    android:text="@string/hello" 
+    android:layout_weight="0.38"/>
+<Button 
+    android:layout_height="wrap_content" 
+    android:layout_width="wrap_content" 
+    android:text="@string/view_entries" 
+    android:layout_gravity="center" 
+    android:id="@+id/all_entries_button">
+</Button>
+<Button 
+    android:layout_height="wrap_content" 
+    android:layout_width="wrap_content" 
+    android:text="@string/new_entry" 
+    android:layout_gravity="center" 
+    android:id="@+id/new_entry_button">
+</Button>
+<Button 
+    android:layout_height="wrap_content" 
+    android:layout_width="wrap_content" 
+    android:text="@string/view_series" 
+    android:layout_gravity="center" 
+    android:id="@+id/all_series_button">
+</Button>
+<Button 
+    android:layout_height="wrap_content" 
+    android:layout_width="wrap_content" 
+    android:text="@string/new_series" 
+    android:layout_gravity="center" 
+    android:id="@+id/new_series_button">
+</Button>
+<Button 
+    android:layout_height="wrap_content" 
+    android:layout_width="wrap_content" 
+    android:text="@string/instructions" 
+    android:layout_gravity="center" 
+    android:id="@+id/instructions_button">
+</Button>
+
+</LinearLayout>

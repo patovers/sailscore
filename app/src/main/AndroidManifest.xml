@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.overs.sailscore"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/SailscoreTheme" >
+        <activity
+            android:name="com.overs.sailscore.SailScoreMainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.overs.sailscore.SeriesListActivity"
+            android:label="@string/series_list_title" >
+        </activity>
+        <activity
+            android:name="com.overs.sailscore.SeriesEditActivity"
+            android:label="@string/series_edit_title"
+            android:parentActivityName="com.overs.sailscore.SeriesTabActivity" >
+
+            <!-- Parent activity meta-data to support API level 7+ -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.overs.sailscore.SeriesTabActivity" />
+        </activity>
+        <activity
+            android:name="com.overs.sailscore.EntriesListActivity"
+            android:label="@string/competitor_list_title" >
+        </activity>
+        <activity
+            android:name="com.overs.sailscore.EntryEditActivity"
+            android:label="@string/competitor_edit_title" >
+        </activity>
+        <activity
+            android:name="com.overs.sailscore.EntriesSelectListActivity"
+            android:label="@string/competitor_select_title" >
+        </activity>
+        <activity
+            android:name="com.overs.sailscore.ResultsEntryListActivity"
+            android:label="@string/results_list_title" >
+        </activity>
+        <activity
+            android:name="com.overs.sailscore.TimesEntryListActivity"
+            android:label="@string/times_list_title" >
+        </activity>
+        <activity
+            android:name="com.overs.sailscore.RaceResultsEntryListActivity"
+            android:label="@string/race_results_list_title" >
+        </activity>
+        <activity
+            android:name="com.overs.sailscore.RaceTimesEntryListActivity"
+            android:label="@string/race_times_list_title" >
+        </activity>
+        <activity
+            android:name="com.overs.sailscore.SeriesScoreListActivity"
+            android:label="@string/scores_list_title" >
+        </activity>
+        <activity
+            android:name="com.overs.sailscore.ResultsExportActivity"
+            android:label="@string/export_title" >
+        </activity>
+        <activity
+            android:name="com.overs.sailscore.SeriesTabActivity"
+            android:label="@string/series_tab_title" >
+        </activity>
+        <activity
+            android:name="com.overs.sailscore.InstructionsActivity"
+            android:label="@string/instructions_title" >
+        </activity>
+    </application>
+
+</manifest>

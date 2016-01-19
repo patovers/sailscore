@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/competitor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="10dip"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/rdg_pos"
+        android:layout_width="100dip"
+        android:textSize="16sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:imeActionLabel="Done"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:selectAllOnFocus="true"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/rdg_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/rdg_pos"
+        android:layout_alignBaseline="@+id/rdg_pos"
+        android:gravity="right"
+        android:paddingRight="10dip"
+        android:text="@string/rdg_pos"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+
+    <Spinner
+        android:id="@+id/result_code_spinner"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/result"
+        android:layout_alignRight="@+id/rdg_pos"
+        android:layout_below="@+id/rdg_pos"
+        android:focusable="true"
+        android:focusableInTouchMode="false"
+        android:gravity="right"
+        android:paddingRight="-10px"
+        android:prompt="@string/result_prompt" />
+
+    <EditText
+        android:id="@+id/result"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_above="@+id/result_code_spinner"
+        android:layout_marginRight="14dp"
+        android:layout_toLeftOf="@+id/rdg_position"
+        android:ems="10"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:imeActionLabel="Done"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:selectAllOnFocus="true"
+        android:textColor="#000000" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/enter_pos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/result"
+        android:layout_toLeftOf="@+id/result"
+        android:paddingRight="10dip"
+        android:text="@string/enter_pos"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/enter_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/result_code_spinner"
+        android:layout_alignLeft="@+id/enter_pos"
+        android:paddingRight="10dip"
+        android:text="@string/enter_code"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+
+</RelativeLayout>
+ 

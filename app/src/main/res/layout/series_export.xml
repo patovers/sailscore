@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="#d2e4fc"
+  android:textColor="#000000">
+  <TextView
+    	android:id="@+id/textView1"
+    	android:layout_width="wrap_content"
+    	android:textColor="#000000"
+    	android:layout_height="wrap_content"
+    	android:text="@string/series_line">
+  </TextView>
+  <TextView
+    	android:id="@+id/textView2"
+    	android:layout_width="wrap_content"
+    	android:textColor="#000000"
+    	android:layout_height="wrap_content">
+  </TextView>
+  <Button
+    	android:layout_height="wrap_content"
+    	android:layout_width="wrap_content"
+    	android:id="@+id/email_csv_button"
+    	android:layout_gravity="center" 
+    	android:text="@string/export_csv">
+  </Button>
+  <Button
+    	android:layout_height="wrap_content"
+    	android:layout_width="wrap_content"
+    	android:id="@+id/save_csv_button"
+    	android:layout_gravity="center" 
+    	android:text="@string/save_csv">
+  </Button>
+</LinearLayout>
